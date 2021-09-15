@@ -190,6 +190,8 @@ class NaverMarkerController {
             final Object infoWindow = json.get("infoWindow");
             if (infoWindow != null) this.infoWindowText = (String)infoWindow;
             else this.infoWindowText = null;
+            
+            marker.setHideCollidedMarkers = false;
         }
 
         void setMap(NaverMap naverMap) {
